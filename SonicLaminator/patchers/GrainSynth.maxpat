@@ -29,6 +29,20 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-93",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 189.666687, 274.0, 98.0, 20.0 ],
+					"text" : "pong~ 1 0. 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -61,7 +75,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 59.0, 307.0, 50.0, 20.0 ]
+					"patching_rect" : [ 58.666687, 361.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -75,7 +89,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 717.791687, 388.571533, 150.0, 87.0 ],
+					"patching_rect" : [ 718.791687, 441.571533, 150.0, 87.0 ],
 					"text" : "Make sure audio is working in dynamicdsp. A hack that might be part of a bug with dynamicdsp. Need to message the creator."
 				}
 
@@ -89,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.791687, 388.571533, 72.0, 20.0 ],
+					"patching_rect" : [ 640.791687, 441.571533, 72.0, 20.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -102,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.791687, 420.0, 37.0, 20.0 ],
+					"patching_rect" : [ 640.791687, 473.0, 37.0, 20.0 ],
 					"text" : "dac~"
 				}
 
@@ -186,7 +200,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 185.0, 304.0, 60.0, 20.0 ],
+					"patching_rect" : [ 184.666687, 422.0, 60.0, 20.0 ],
 					"text" : "audio out"
 				}
 
@@ -200,7 +214,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 246.0, 142.0, 20.0 ],
+					"patching_rect" : [ 297.666687, 364.0, 142.0, 20.0 ],
 					"text" : "apply vonn hann window"
 				}
 
@@ -214,7 +228,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 215.0, 177.0, 20.0 ],
+					"patching_rect" : [ 379.666687, 333.0, 177.0, 20.0 ],
 					"text" : "normalised input drives window"
 				}
 
@@ -228,7 +242,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 653.0, 243.0, 113.0, 20.0 ],
+					"patching_rect" : [ 652.666687, 297.0, 113.0, 20.0 ],
 					"text" : "busy flag out (sum)"
 				}
 
@@ -242,7 +256,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 214.0, 136.0, 20.0 ],
+					"patching_rect" : [ 36.666687, 268.0, 136.0, 20.0 ],
 					"text" : "use ramp to drive play~"
 				}
 
@@ -255,7 +269,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 190.0, 275.0, 92.0, 20.0 ],
+					"patching_rect" : [ 189.666687, 393.0, 92.0, 20.0 ],
 					"text" : "dynamic.out~ 1"
 				}
 
@@ -269,7 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 190.0, 246.0, 99.5, 20.0 ],
+					"patching_rect" : [ 189.666687, 364.0, 99.5, 20.0 ],
 					"text" : "*~"
 				}
 
@@ -283,7 +297,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 190.0, 214.0, 93.0, 20.0 ],
+					"patching_rect" : [ 189.666687, 332.0, 93.0, 20.0 ],
 					"text" : "play~ LamInput"
 				}
 
@@ -297,7 +311,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 271.0, 214.0, 101.0, 20.0 ],
+					"patching_rect" : [ 270.666687, 332.0, 101.0, 20.0 ],
 					"text" : "cycle~ vonnhann"
 				}
 
@@ -310,7 +324,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 680.0, 214.0, 92.0, 20.0 ],
+					"patching_rect" : [ 679.666687, 268.0, 92.0, 20.0 ],
 					"text" : "dynamic.out~ 2"
 				}
 
@@ -366,7 +380,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 190.0, 179.0, 509.0, 20.0 ],
+					"patching_rect" : [ 189.666687, 233.0, 509.0, 20.0 ],
 					"text" : "voicedrive~"
 				}
 
@@ -436,7 +450,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 633.666687, 378.428467, 246.0, 109.571533 ]
+					"patching_rect" : [ 633.333374, 432.428467, 246.0, 109.571533 ]
 				}
 
 			}
@@ -551,19 +565,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
+					"source" : [ "obj-5", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-93", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-5", 3 ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -591,6 +605,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-93", 0 ]
 				}
 
 			}
