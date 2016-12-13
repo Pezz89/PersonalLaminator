@@ -297,8 +297,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 189.666687, 332.0, 93.0, 20.0 ],
-					"text" : "play~ LamInput"
+					"patching_rect" : [ 189.666687, 332.0, 56.0, 20.0 ],
+					"text" : "play~ #1"
 				}
 
 			}
